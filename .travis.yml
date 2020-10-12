@@ -21,7 +21,7 @@ env:
   - OSVER=OpenWrt_19.07   SDK_URL=https://downloads.openwrt.org/releases/19.07.1/targets/ar71xx/generic/openwrt-sdk-19.07.1-ar71xx-generic_gcc-7.5.0_musl.Linux-x86_64.tar.xz
 install:
 - mkdir -p $TRAVIS_BUILD_DIR/local ; cd $TRAVIS_BUILD_DIR/local
-- wget "http://archive.ubuntu.com/ubuntu/pool/main/c/ccache/ccache_3.7.2-3_amd64.deb"
+- wget "http://archive.ubuntu.com/ubuntu/pool/main/c/ccache/ccache_3.7.11-1_amd64.deb"
 - dpkg -x *.deb .
 - mkdir -p $TRAVIS_BUILD_DIR/cache ; cd $TRAVIS_BUILD_DIR/cache
 - wget -c $SDK_URL
